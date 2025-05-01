@@ -1,0 +1,429 @@
+git <?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/mainBGcolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_dashboard_passenger">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="413dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView_card_balance"
+        android:layout_width="330dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="46dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/textBGcolor"
+        android:gravity="center_horizontal|center_vertical"
+        android:lineSpacingExtra="20sp"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="45dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="316dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_setting" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="33dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_menu" />
+
+    <ImageView
+        android:id="@+id/imageView_vehicle_monitoring"
+        android:layout_width="89dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="52dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/sectionBGcolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_choose_route"
+        app:srcCompat="@drawable/logo_vehicle_monitoring" />
+
+    <TextView
+        android:id="@+id/textView_track_vehicle"
+        android:layout_width="88dp"
+        android:layout_height="11dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_subrayada_bold"
+        android:text="Track Vehicle"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_vehicle_monitoring"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/text_card_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_subrayada_bold"
+        android:text="CARD BALANCE"
+        android:textColor="@color/buttonText"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_card_balance"
+        app:layout_constraintEnd_toEndOf="@+id/textView_card_balance"
+        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintStart_toStartOf="@+id/textView_card_balance"
+        app:layout_constraintTop_toTopOf="@+id/textView_card_balance"
+        app:layout_constraintVertical_bias="0.092" />
+
+    <ImageView
+        android:id="@+id/imagePhp"
+        android:layout_width="74dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_card_balance"
+        app:layout_constraintEnd_toStartOf="@+id/imageView10"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="@+id/textView_card_balance"
+        app:layout_constraintTop_toBottomOf="@+id/text_card_balance"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/baseline_php_24" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="41dp"
+        android:layout_height="47dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_card_balance"
+        app:layout_constraintEnd_toEndOf="@+id/textView_card_balance"
+        app:layout_constraintHorizontal_bias="0.948"
+        app:layout_constraintStart_toStartOf="@+id/textView_card_balance"
+        app:layout_constraintTop_toTopOf="@+id/textView_card_balance"
+        app:srcCompat="@drawable/ic_add_go_card" />
+
+    <TextView
+        android:id="@+id/textView_card_details"
+        android:layout_width="128dp"
+        android:layout_height="184dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="44dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/detailsBGcolor"
+        android:fontFamily="@font/montserrat_subrayada_bold"
+        android:text="Card Details"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/primaryText"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_card_balance" />
+
+    <TextView
+        android:id="@+id/textView_card_acct_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="40dp"
+        android:text="1234 8765"
+        android:textColor="@color/secondaryText"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView_card_details"
+        app:layout_constraintStart_toStartOf="@+id/textView_card_details"
+        app:layout_constraintTop_toTopOf="@+id/textView_card_details" />
+
+    <TextView
+        android:id="@+id/textView_card_acct_no2"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginEnd="40dp"
+        android:text="8765 1234"
+        android:textColor="@color/secondaryText"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView_card_details"
+        app:layout_constraintStart_toStartOf="@+id/textView_card_details"
+        app:layout_constraintTop_toBottomOf="@+id/textView_card_acct_no" />
+
+    <TextView
+        android:id="@+id/textView_passenger_type_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Passenger Type"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_card_details"
+        app:layout_constraintStart_toStartOf="@+id/textView_card_details"
+        app:layout_constraintTop_toBottomOf="@+id/textView_card_acct_no2" />
+
+    <TextView
+        android:id="@+id/textView_student_card_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:text="Student"
+        android:textColor="@color/secondaryText"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView_card_details"
+        app:layout_constraintStart_toStartOf="@+id/textView_card_details"
+        app:layout_constraintTop_toBottomOf="@+id/textView_passenger_type_details" />
+
+    <TextView
+        android:id="@+id/textView_status_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="80dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Status"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_card_details"
+        app:layout_constraintStart_toStartOf="@+id/textView_card_details"
+        app:layout_constraintTop_toBottomOf="@+id/textView_student_card_details" />
+
+    <TextView
+        android:id="@+id/textView_active_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:text="Active"
+        android:textColor="@color/secondaryText"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView_card_details"
+        app:layout_constraintStart_toStartOf="@+id/textView_card_details"
+        app:layout_constraintTop_toBottomOf="@+id/textView_status_details" />
+
+    <TextView
+        android:id="@+id/textView_trip_history"
+        android:layout_width="187dp"
+        android:layout_height="276dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/tripHistoryBGcolor"
+        android:fontFamily="@font/montserrat_subrayada_bold"
+        android:text="TRIP HISTORY"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/textView_card_details"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_card_balance" />
+
+    <TextView
+        android:id="@+id/textView_date_trip_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Date"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView_fare_deducted"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="@+id/textView_trip_history"
+        app:layout_constraintTop_toTopOf="@+id/textView_trip_history" />
+
+    <TextView
+        android:id="@+id/textView_fare_deducted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Fare Deducted"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_trip_history"
+        app:layout_constraintTop_toTopOf="@+id/textView_trip_history" />
+
+    <TextView
+        android:id="@+id/textView_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Apr 21, 2025"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView_fare_deduction_history"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="@+id/textView_trip_history"
+        app:layout_constraintTop_toBottomOf="@+id/textView_date_trip_history" />
+
+    <TextView
+        android:id="@+id/textView_route_history"
+        android:layout_width="59dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="1dp"
+        android:text="Naga Centro - Delrosario"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_trip_history"
+        app:layout_constraintHorizontal_bias="0.054"
+        app:layout_constraintStart_toStartOf="@+id/textView_trip_history"
+        app:layout_constraintTop_toBottomOf="@+id/textView_date" />
+
+    <TextView
+        android:id="@+id/textView_fare_deduction_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:text="P19.00"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView_fare_deduction_history2"
+        app:layout_constraintEnd_toEndOf="@+id/textView_trip_history"
+        app:layout_constraintTop_toBottomOf="@+id/textView_fare_deducted"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView_date2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Apr 20, 2025"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toStartOf="@+id/textView_fare_deduction_history2"
+        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintStart_toStartOf="@+id/textView_trip_history"
+        app:layout_constraintTop_toBottomOf="@+id/textView_route_history" />
+
+    <TextView
+        android:id="@+id/textView_route_history2"
+        android:layout_width="69dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="1dp"
+        android:text="Naga Centro - Concepcion"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_trip_history"
+        app:layout_constraintHorizontal_bias="0.059"
+        app:layout_constraintStart_toStartOf="@+id/textView_trip_history"
+        app:layout_constraintTop_toBottomOf="@+id/textView_date2" />
+
+    <TextView
+        android:id="@+id/textView_fare_deduction_history2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="P14.00"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView_trip_history"
+        tools:layout_editor_absoluteY="493dp" />
+
+    <TextView
+        android:id="@+id/textView_date3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Apr 20, 2025"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="@+id/textView_trip_history"
+        app:layout_constraintTop_toBottomOf="@+id/textView_route_history2" />
+
+    <TextView
+        android:id="@+id/textView_route_history3"
+        android:layout_width="67dp"
+        android:layout_height="40dp"
+        android:text="Delrosario -Panganiban"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_trip_history"
+        app:layout_constraintEnd_toEndOf="@+id/textView_trip_history"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="@+id/textView_trip_history"
+        app:layout_constraintTop_toBottomOf="@+id/textView_date3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView_fare_deduction_history3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="32dp"
+        android:text="P16.00"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView_trip_history"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView_date3"
+        app:layout_constraintTop_toBottomOf="@+id/textView_fare_deduction_history2" />
+
+    <ImageView
+        android:id="@+id/imageView_choose_route"
+        android:layout_width="89dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/sectionBGcolor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView_trip_history"
+        app:layout_constraintTop_toBottomOf="@+id/textView_card_details"
+        app:srcCompat="@drawable/ic_choose_route" />
+
+    <TextView
+        android:id="@+id/textView_choose_route"
+        android:layout_width="89dp"
+        android:layout_height="13dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_subrayada_bold"
+        android:text="Choose Route"
+        android:textAlignment="center"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_choose_route" />
+
+    <TextView
+        android:id="@+id/textView_low_balance"
+        android:layout_width="156dp"
+        android:layout_height="67dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#F2DECD"
+        android:gravity="center"
+        android:text="    Balance is Low"
+        android:textColor="#C86767"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_vehicle_monitoring"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_trip_history"
+        app:layout_constraintVertical_bias="0.229" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="105dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_low_balance"
+        app:layout_constraintEnd_toEndOf="@+id/textView_low_balance"
+        app:layout_constraintStart_toStartOf="@+id/textView_low_balance"
+        app:layout_constraintTop_toTopOf="@+id/textView_low_balance"
+        app:srcCompat="@drawable/ic_report_problem_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/first_name_input"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBGcolor"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/sign_in_bttn"
+        android:layout_width="237dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="112dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="112dp"
+        android:background="@color/primaryBttn"
+        android:text="Log In"
+        android:textColor="@color/buttonText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_line" />
+
+    <TextView
+        android:id="@+id/dont_have_acct_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="87dp"
+        android:text="Don't have an account yet?"
+        android:textColor="@color/primaryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_in_bttn" />
+
+    <Button
+        android:id="@+id/sign_up_bttn"
+        android:layout_width="238dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="83dp"
+        android:background="@color/primaryBttn"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:textColor="@color/buttonText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dont_have_acct_txt" />
+
+    <TextView
+        android:id="@+id/forgot_pin_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="202dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="25dp"
+        android:text="Forgot Password?"
+        android:textColor="@color/primaryText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_up_bttn" />
+
+    <TextView
+        android:id="@+id/textView_line"
+        android:layout_width="386dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="50dp"
+        android:text="___________________________________________________________"
+        android:textColor="@color/lineColor"
+        app:layout_constraintBottom_toTopOf="@+id/sign_in_bttn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#F6EDE6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

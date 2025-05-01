@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_dashboard_transport_operator">
+
+    <ImageView
+        android:id="@+id/totalPassenger"
+        android:layout_width="98dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/sample_total_passenger"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <ImageView
+        android:id="@+id/totalFare"
+        android:layout_width="98dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/sample_total_fare"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <ImageView
+        android:id="@+id/activeVehicle"
+        android:layout_width="98dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/sample_active_vehicle"
+        tools:layout_editor_absoluteX="197dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <ImageView
+        android:id="@+id/reportedFeedback"
+        android:layout_width="98dp"
+        android:layout_height="75dp"
+        app:srcCompat="@drawable/sample_reported_feedback"
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

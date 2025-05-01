@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+
+//Main BG 
+    <color name="mainBGcolor">#FFF6EDE6</color>
+//Section BG
+    <color name="sectionBGcolor">#F9F4EF</color>
+    <color name="textBGcolor">#5de9e5</color>
+    <color name="detailsBGcolor">#e2d8d8</color>
+    <color name="tripHistoryBGcolor">#f2ede9</color>
+
+//Text scheme
+    <color name="primaryText">#2F2F2F</color>
+    <color name="buttonText">#f7eee7</color>
+    <color name="secondaryText">#5E5E5E</color>
+    <color name="hintText">#A6A6A6</color>
+    <color name="disabledText">#CCCCCC</color>
+    
+//Button color
+    <color name="primaryBttn">#266de4</color>
+    <color name="secondaryBttn">#FFD166</color>
+    <color name="textBttn">Transparent</color>
+
+//Line color
+    <color name="lineColor">#9fa1a2</color>
+//Button pressed or hover
+    <color name="primaryBttnHvr">#E67244</color>
+    <color name="secondaryBttnHvr">#FFBB33</color>
+
+</resources>
