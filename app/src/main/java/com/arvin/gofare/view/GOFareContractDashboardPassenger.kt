@@ -1,9 +1,12 @@
 package com.arvin.gofare.view
 
+import com.arvin.gofare.model.Trip
+
+
 interface GOFareContractDashboardPassenger {
     interface DashboardView {
         fun showCardBalance(balance: Double)
-        fun showTripHistory(trips: List<Trip>)
+        fun showTripHistory(tripData: List<Trip>)
         fun showCardDetails(cardNumber: String, passengerType: String, status: String)
         fun showLowBalanceWarning()
         fun showError(message: String)
@@ -29,7 +32,7 @@ interface GOFareContractDashboardPassenger {
     }
 
     interface TripHistoryCallback {
-        fun onHistoryLoaded(trips: List<Trip>)
+        fun onHistoryLoaded(trips: List<Trip.TripData>)
         fun onFailure(message: String)
     }
 
@@ -38,10 +41,4 @@ interface GOFareContractDashboardPassenger {
         fun onFailure(message: String)
     }
 
-    // Data Models
-    data class Trip(
-        val date: String,
-        val route: String,
-        val fare: Double
-    )
 }
